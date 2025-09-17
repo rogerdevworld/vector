@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   minirt.h                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rmarrero  <marvin@42.fr>                   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/07/23 14:22:49 by rmarrero          #+#    #+#             */
+/*   Updated: 2025/07/23 14:23:20 by rmarrero         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 #ifndef MINIRT_H
 # define MINIRT_H
 
@@ -7,9 +18,9 @@
 
 // --- macros ---
 # define EPSILON 1e-6
-#ifndef M_PI
-# define M_PI 3.14159265358979323846
-#endif
+# ifndef M_PI
+#  define M_PI 3.14159265358979323846
+# endif
 
 // --- Structs ---
 
@@ -60,7 +71,6 @@ double			vec3_length(t_vec3 v);
 double			vec3_length_squared(t_vec3 v);
 t_vec3			vec3_normalize(t_vec3 v);
 t_vec3			vec3_reflect(t_vec3 v, t_vec3 n);
-
 
 t_vec3			rotate_vector(t_vec3 v, t_vec3 axis, double angle);
 #endif
