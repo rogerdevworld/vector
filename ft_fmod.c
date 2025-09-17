@@ -1,12 +1,22 @@
-// ft_fmod.c
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_fmod.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rmarrero  <marvin@42.fr>                   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/07/23 14:22:49 by rmarrero          #+#    #+#             */
+/*   Updated: 2025/07/23 14:23:20 by rmarrero         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 #include "minirt.h"
 
-double ft_fmod(double x, double y)
+double	ft_fmod(double x, double y)
 {
-    long long n;
+	long long	n;
 
-    if (y == 0.0)
-        return x; // or handle as an error
-    n = (long long)(x / y);
-    return x - n * y;
+	if (y == 0.0)
+		return (x);
+	n = (long long)(x / y);
+	return (x - n * y);
 }
